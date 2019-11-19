@@ -34,10 +34,11 @@ fn findpi() -> f64 {
 fn main() {
     let now = Instant::now();
     let sum = sum_numbers(2,5);
-    println!("{}", sum);
+    println!("Your lucky number is: {}", sum);
+    println!("Please wait, benchmark is running...");
 	
-	let pi = findpi();
-	let new_now = Instant::now();
-	println!("{}", pi);
-	println!("{:?}", new_now.saturating_duration_since(now));
+    let pi = findpi();
+    let new_now = Instant::now();
+    println!("{}", pi);
+    println!("Duration time: {:?}", new_now.saturating_duration_since(now));
 }
