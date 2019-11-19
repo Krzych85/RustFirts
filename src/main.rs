@@ -39,6 +39,6 @@ fn main() {
 	
     let pi = findpi();
     let new_now = Instant::now();
-    println!("{}", pi);
+    println!("Calculated pi: {}", pi);
     println!("Duration time: {:?}", new_now.saturating_duration_since(now));
 }
